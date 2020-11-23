@@ -252,7 +252,7 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
-
+/*
 console.log(23 === 23.0);
 
 console.log(typeof +'23');
@@ -261,7 +261,30 @@ console.log(typeof +'23');
 console.log(Number.parseInt('522', 3));
 console.log(Number.parseFloat('3010.02'));
 
+// Check if value is NaN
 console.log(Number.isNaN(20));
 console.log(Number.isNaN(Number.parseInt('522', 2)));
 console.log(Number.isNaN(+'20xx'));
-console.log(Number.isNaN(+'20xx'));
+console.log(Number.isNaN(+'2022xx'));
+console.log(Number.isNaN(20 / 0));
+
+// CHeking if value is number
+console.log(Number.isFinite(20 / 0));
+console.log(Number.isFinite(20));
+console.log(Number.isFinite('23px'));
+*/
+console.log(Math.sqrt(25));
+console.log(25 ** (1 / 2));
+
+console.log(Math.max(5, 18, 23, 11, 2));
+console.log(Math.max(5, 18, '23', 11, 2));
+console.log(Math.max(5, 18, 'xx', 11, 2));
+console.log(Math.min(5, 18, 23, 11, 2));
+
+console.log(Math.PI);
+
+// Random
+console.log(Math.trunc(Math.random() * 6 + 1));
+const randomInt = (min, max) => Math.trunc(Math.random() * (max - min) + 1);
+
+console.log(randomInt(10, 20));
